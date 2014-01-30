@@ -29,6 +29,7 @@ public class Arm extends Subsystem {
         //setDefaultCommand(new MySpecialCommand());
         setDefaultCommand(new ArmlevateWithJoysticks());
     }
+    
     public void armlevate(double vel) {
         armMotor.set(vel);
     }

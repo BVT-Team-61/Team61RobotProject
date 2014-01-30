@@ -30,69 +30,58 @@ public class Grasper extends Subsystem {
     public void doNothing() {
         ;
     }
-public void shiftToGraspInOn ()
-{
-//insert command here     
-    if (debugging) {
-        System.out.println("shiftToGraspIn - before");
-        System.out.println("In Solenoid set to " + graspInShift.get());
-        System.out.println("Out Solenoid set to  " + graspOutShift.get());
-    }
-    graspInShift.set(true);
-    if (debugging) {
-        System.out.println("shiftToGraspIn - after");
-        System.out.println("In Solenoid set to " + graspInShift.get());
-        System.out.println("Out Solenoid set to  " + graspOutShift.get());
-    }
- }
-public void shiftToGraspInOff ()
-{
-//insert command here     
-    if (debugging) {
-        System.out.println("shiftToGraspIn - before");
-        System.out.println("In Solenoid set to " + graspInShift.get());
-        System.out.println("Out Solenoid set to  " + graspOutShift.get());
-    }
-    graspInShift.set(false);
-    if (debugging) {
-        System.out.println("shiftToGraspIn - after");
-        System.out.println("In Solenoid set to " + graspInShift.get());
-        System.out.println("Out Solenoid set to  " + graspOutShift.get());
-    }
- }
-public void shiftToGraspOutOn ()
+    public void shiftToGraspInOn() {
+        if (debugging) {
+            System.out.println("shiftToGraspIn - before");
+            System.out.println("In Solenoid set to " + graspInShift.get());
+            System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        }
+        graspInShift.set(true);
+        if (debugging) {
+            System.out.println("shiftToGraspIn - after");
+            System.out.println("In Solenoid set to " + graspInShift.get());
+            System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        }
+     }
+    public void shiftToGraspInOff() {
+        if (debugging) {
+            System.out.println("shiftToGraspIn - before");
+            System.out.println("In Solenoid set to " + graspInShift.get());
+            System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        }
+        graspInShift.set(false);
+        if (debugging) {
+            System.out.println("shiftToGraspIn - after");
+            System.out.println("In Solenoid set to " + graspInShift.get());
+            System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        }
+     }
+    public void shiftToGraspOutOn() {
+        if (debugging) {
+            System.out.println("shiftToGraspOut - before");
+            System.out.println("In Solenoid set to " + graspInShift.get());
+            System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        }
+        graspOutShift.set(true);
 
-{
-    if (debugging) {
-        System.out.println("shiftToGraspOut - before");
-        System.out.println("In Solenoid set to " + graspInShift.get());
-        System.out.println("Out Solenoid set to  " + graspOutShift.get());
-    }
-    graspOutShift.set(true);
+        if (debugging) {
+            System.out.println("shiftToGraspOut - after");
+            System.out.println("In Solenoid set to " + graspInShift.get());
+            System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        }
+    }       
+    public void shiftToGraspOutOff() {
+        if (debugging) {
+            System.out.println("shiftToGraspOut - before");
+            System.out.println("In Solenoid set to " + graspInShift.get());
+            System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        }
+        graspOutShift.set(false);
 
-    if (debugging) {
-        System.out.println("shiftToGraspOut - after");
-        System.out.println("In Solenoid set to " + graspInShift.get());
-        System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        if (debugging) {
+            System.out.println("shiftToGraspOut - after");
+            System.out.println("In Solenoid set to " + graspInShift.get());
+            System.out.println("Out Solenoid set to  " + graspOutShift.get());
+        }
     }
-}       
-public void shiftToGraspOutOff ()
-
-{
-    if (debugging) {
-        System.out.println("shiftToGraspOut - before");
-        System.out.println("In Solenoid set to " + graspInShift.get());
-        System.out.println("Out Solenoid set to  " + graspOutShift.get());
-    }
-    graspOutShift.set(false);
-
-    if (debugging) {
-        System.out.println("shiftToGraspOut - after");
-        System.out.println("In Solenoid set to " + graspInShift.get());
-        System.out.println("Out Solenoid set to  " + graspOutShift.get());
-    }
-}           
-        
-        
-        
 }       

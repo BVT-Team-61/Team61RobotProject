@@ -39,8 +39,8 @@ public class OI {
     Button forwardButton = new JoystickButton (jRight,2);
     Button reverseButton = new JoystickButton (jRight,3);
 
-   private static boolean reverseDriveMode=false ;
-   private static boolean armMode = false;
+    private static boolean reverseDriveMode=false ;
+    private static boolean armMode = false;
 
     // Button shootButton = new JoystickButton(jShooter, 1);
     
@@ -123,6 +123,5 @@ public class OI {
             return (jFour.getY());
         }
     }
-    
 }
 

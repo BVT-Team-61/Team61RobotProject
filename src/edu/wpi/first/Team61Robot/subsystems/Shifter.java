@@ -23,7 +23,6 @@ public class Shifter extends Subsystem {
     private Solenoid armlevateShift = new Solenoid (RobotMap.armlevateSolenoid) ;
     private Solenoid armapultShift = new Solenoid (RobotMap.armapultSolenoid) ;
 
-
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         setDefaultCommand(new ShifterDoNothing());
@@ -31,63 +30,60 @@ public class Shifter extends Subsystem {
     public void doNothing() {
         ;
     }
-public void shiftToArmlevateOn() {
-//insert command here     
-    if (debugging) {
-        System.out.println("shiftToArmlevate - before");
-        System.out.println("Drive Solenoid set to " + armlevateShift.get());
-        System.out.println("Arm Solenoid set to  " + armapultShift.get());
-    }
-    armlevateShift.set(true);
-    if (debugging) {
-        System.out.println("shiftToArmlevate - after");
-        System.out.println("Drive Solenoid set to " + armlevateShift.get());
-        System.out.println("Arm Solenoid set to  " + armapultShift.get());
-    }
- }
-public void shiftToArmlevateOff() {
-//insert command here     
-    if (debugging) {
-        System.out.println("shiftToArmlevate - before");
-        System.out.println("Drive Solenoid set to " + armlevateShift.get());
-        System.out.println("Arm Solenoid set to  " + armapultShift.get());
-    }
-    armlevateShift.set(false);
-    if (debugging) {
-        System.out.println("shiftToArmapult - after");
-        System.out.println("Drive Solenoid set to " + armlevateShift.get());
-        System.out.println("Arm Solenoid set to  " + armapultShift.get());
-    }
- }
-public void shiftToArmapultOn() {
-    if (debugging) {
-        System.out.println("shiftToArmapult - before");
-        System.out.println("Drive Solenoid set to " + armlevateShift.get());
-        System.out.println("Arm Solenoid set to  " + armapultShift.get());
-    }
-    armapultShift.set(true);
+    public void shiftToArmlevateOn() {
+    //insert command here     
+        if (debugging) {
+            System.out.println("shiftToArmlevate - before");
+            System.out.println("Armlevate Solenoid set to " + armlevateShift.get());
+            System.out.println("Armapult Solenoid set to  " + armapultShift.get());
+        }
+        armlevateShift.set(true);
+        if (debugging) {
+            System.out.println("shiftToArmlevate - after");
+            System.out.println("Armlevate Solenoid set to " + armlevateShift.get());
+            System.out.println("Armapult Solenoid set to  " + armapultShift.get());
+        }
+     }
+    public void shiftToArmlevateOff() {
+    //insert command here     
+        if (debugging) {
+            System.out.println("shiftToArmlevate - before");
+            System.out.println("Armlevate Solenoid set to " + armlevateShift.get());
+            System.out.println("Armapult Solenoid set to  " + armapultShift.get());
+        }
+        armlevateShift.set(false);
+        if (debugging) {
+            System.out.println("shiftToArmlevate - after");
+            System.out.println("Armlevate Solenoid set to " + armlevateShift.get());
+            System.out.println("Armapult Solenoid set to  " + armapultShift.get());
+        }
+     }
+    public void shiftToArmapultOn() {
+        if (debugging) {
+            System.out.println("shiftToArmapult - before");
+            System.out.println("Armlevate Solenoid set to " + armlevateShift.get());
+            System.out.println("Armapult Solenoid set to  " + armapultShift.get());
+        }
+        armapultShift.set(true);
 
-    if (debugging) {
-        System.out.println("shiftToArmapult - after");
-        System.out.println("Drive Solenoid set to " + armlevateShift.get());
-        System.out.println("Arm Solenoid set to  " + armapultShift.get());
-    }
-}       
-public void shiftToArmapultOff() {
-    if (debugging) {
-        System.out.println("shiftToArapult - before");
-        System.out.println("Drive Solenoid set to " + armlevateShift.get());
-        System.out.println("Arm Solenoid set to  " + armapultShift.get());
-    }
-    armapultShift.set(false);
+        if (debugging) {
+            System.out.println("shiftToArmapult - after");
+            System.out.println("Armlevate Solenoid set to " + armlevateShift.get());
+            System.out.println("Armapult Solenoid set to  " + armapultShift.get());
+        }
+    }       
+    public void shiftToArmapultOff() {
+        if (debugging) {
+            System.out.println("shiftToArapult - before");
+            System.out.println("Armlevate Solenoid set to " + armlevateShift.get());
+            System.out.println("Armapult Solenoid set to  " + armapultShift.get());
+        }
+        armapultShift.set(false);
 
-    if (debugging) {
-        System.out.println("shiftToArmpult - after");
-        System.out.println("Drive Solenoid set to " + armlevateShift.get());
-        System.out.println("Arm Solenoid set to  " + armapultShift.get());
-    }
-}           
-        
-        
-        
+        if (debugging) {
+            System.out.println("shiftToArmpult - after");
+            System.out.println("Armlevate Solenoid set to " + armlevateShift.get());
+            System.out.println("Armapult Solenoid set to  " + armapultShift.get());
+        }
+    }           
 }       

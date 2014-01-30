@@ -26,7 +26,7 @@ public class DriveWithJoysticks extends CommandBase {
           if (oi.weAreReversing()){
               drivetrain.reverseTankDrive(oi.getLeftSpeed()*-1.0,oi.getRightSpeed());
           }
-           else
+          else
           {
               drivetrain.tankDrive(oi.getLeftSpeed(),oi.getRightSpeed());
           }

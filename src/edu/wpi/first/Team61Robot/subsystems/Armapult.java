@@ -28,12 +28,14 @@ public class Armapult extends Subsystem {
     public void doNothing(){
     ;
     }
+
     public void releaseOff(){
         release.set(false);
     }
     public void releaseOn(){
         release.set(true);
     }
+    
     public void backOff(){
         back.set(false);
     }
