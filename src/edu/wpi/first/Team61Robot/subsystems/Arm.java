@@ -22,6 +22,7 @@ public class Arm extends Subsystem {
 
     private SpeedController armMotor = new Victor(RobotMap.armMotor);
     private Solenoid armapultIn = new Solenoid(RobotMap.armapultInSolenoid);
+    private Solenoid armapultOut = new Solenoid (RobotMap.armapultOutSolenoid);
     
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.

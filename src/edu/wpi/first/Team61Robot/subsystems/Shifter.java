@@ -40,7 +40,7 @@ public void shiftToArmlevateOn() {
     }
     armlevateShift.set(true);
     if (debugging) {
-        System.out.println("shiftToDrive - after");
+        System.out.println("shiftToArmlevate - after");
         System.out.println("Drive Solenoid set to " + armlevateShift.get());
         System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
@@ -48,41 +48,41 @@ public void shiftToArmlevateOn() {
 public void shiftToArmlevateOff() {
 //insert command here     
     if (debugging) {
-        System.out.println("shiftToDrive - before");
+        System.out.println("shiftToArmlevate - before");
         System.out.println("Drive Solenoid set to " + armlevateShift.get());
         System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
     armlevateShift.set(false);
     if (debugging) {
-        System.out.println("shiftToDrive - after");
+        System.out.println("shiftToArmapult - after");
         System.out.println("Drive Solenoid set to " + armlevateShift.get());
         System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
  }
 public void shiftToArmapultOn() {
     if (debugging) {
-        System.out.println("shiftToClimb - before");
+        System.out.println("shiftToArmapult - before");
         System.out.println("Drive Solenoid set to " + armlevateShift.get());
         System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
     armapultShift.set(true);
 
     if (debugging) {
-        System.out.println("shiftToClimb - after");
+        System.out.println("shiftToArmapult - after");
         System.out.println("Drive Solenoid set to " + armlevateShift.get());
         System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
 }       
 public void shiftToArmapultOff() {
     if (debugging) {
-        System.out.println("shiftToClimb - before");
+        System.out.println("shiftToArapult - before");
         System.out.println("Drive Solenoid set to " + armlevateShift.get());
         System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
     armapultShift.set(false);
 
     if (debugging) {
-        System.out.println("shiftToClimb - after");
+        System.out.println("shiftToArmpult - after");
         System.out.println("Drive Solenoid set to " + armlevateShift.get());
         System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }

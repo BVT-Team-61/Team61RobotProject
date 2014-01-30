@@ -24,9 +24,9 @@ public abstract class CommandBase extends Command {
     public static Arm arm = new Arm();
     public static Grasper grasper = new Grasper();
     
-    public static double autoLeftSpeed[]        = { 0.0, 0.0, 0.0, 0.0, 0.0 };
-    public static double autoRightSpeed[]       = { 0.0, 0.0, 0.0, 0.0, 0.0 };
-    public static double autoDriveTime[]        = { 0.0, 0.0, 0.0, 0.0, 0.0 };
+    public static double autoLeftSpeed[]        = { 1.0, 0.0, 0.0, 0.0, 0.0 };
+    public static double autoRightSpeed[]       = { 1.0, 0.0, 0.0, 0.0, 0.0 };
+    public static double autoDriveTime[]        = { 1.5, 0.0, 0.0, 0.0, 0.0 };
             
     public static void init() {
         // This MUST be here. If the OI creates Commands (which it very likely
