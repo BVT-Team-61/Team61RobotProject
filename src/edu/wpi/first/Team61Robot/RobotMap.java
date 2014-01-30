@@ -20,11 +20,12 @@ public class RobotMap {
     // public static final int rangefinderModule = 1;
     
     // Digital outputs
-    public static final int driveSolenoid = 1;
-    public static final int armSolenoid = 2;
+    public static final int armlevateSolenoid = 1;
+    public static final int armapultSolenoid = 2;
     
-    public static final int hangerOutSolenoid = 5;
-    public static final int hangerInSolenoid = 6;
+    public static final int grasperOutSolenoid = 5;
+    public static final int grasperInSolenoid = 6;
+    
     public static final int armapultInSolenoid= 7; 
     public static final int armapultOutSolenoid= 8; 
     

@@ -4,7 +4,9 @@ package edu.wpi.first.Team61Robot;
 import edu.wpi.first.Team61Robot.commands.ArmapultRelease;
 import edu.wpi.first.Team61Robot.commands.ShiftToArmlevate;
 import edu.wpi.first.Team61Robot.commands.ShiftToArmapult;
-
+import edu.wpi.first.Team61Robot.commands.ArmapultBack;
+import edu.wpi.first.Team61Robot.commands.GraspIn;
+import edu.wpi.first.Team61Robot.commands.GraspOut;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
@@ -28,7 +30,11 @@ public class OI {
     Button armapultButton = new JoystickButton(jFour, 1);
     Button armlevateButton = new JoystickButton(jFour, 2);
     
+    Button graspInButton = new JoystickButton(jThree, 1);
+    Button graspOutButton = new JoystickButton(jThree, 2);
+    
     Button shooterRelease = new JoystickButton(jLeft, 1);
+    Button shooterReset = new JoystickButton(jLeft, 2);
     
     Button forwardButton = new JoystickButton (jRight,2);
     Button reverseButton = new JoystickButton (jRight,3);
@@ -66,7 +72,12 @@ public class OI {
     public OI() {
       armapultButton.whenPressed(new ShiftToArmapult());
       armlevateButton.whenPressed(new ShiftToArmlevate());
+      
+      graspInButton.whenPressed(new GraspIn());
+      graspOutButton.whenPressed(new GraspOut());
+      
       shooterRelease.whenPressed(new ArmapultRelease());
+      shooterReset.whenPressed(new ArmapultBack());
     }
     /**
      *  Check drive and climb buttons to see if they are current;y pressed

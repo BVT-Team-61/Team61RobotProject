@@ -34,7 +34,7 @@ public class ArmapultReset extends CommandBase {
 
     // Called once after isFinished returns true
     protected void end() {
-       arm.setIn(false);
+        arm.setIn(false);
     }
 
     // Called when another command which requires one or more of the same

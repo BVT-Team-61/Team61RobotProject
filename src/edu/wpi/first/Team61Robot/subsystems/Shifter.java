@@ -20,8 +20,8 @@ public class Shifter extends Subsystem {
         // Put methods for controlling this subsystem
         // here. Call these from Commands.
 
-    private Solenoid driveShift = new Solenoid (RobotMap.driveSolenoid) ;
-    private Solenoid armShift = new Solenoid (RobotMap.armSolenoid) ;
+    private Solenoid armlevateShift = new Solenoid (RobotMap.armlevateSolenoid) ;
+    private Solenoid armapultShift = new Solenoid (RobotMap.armapultSolenoid) ;
 
 
     public void initDefaultCommand() {
@@ -31,66 +31,60 @@ public class Shifter extends Subsystem {
     public void doNothing() {
         ;
     }
-public void shiftToDriveOn ()
-{
+public void shiftToArmlevateOn() {
+//insert command here     
+    if (debugging) {
+        System.out.println("shiftToArmlevate - before");
+        System.out.println("Drive Solenoid set to " + armlevateShift.get());
+        System.out.println("Arm Solenoid set to  " + armapultShift.get());
+    }
+    armlevateShift.set(true);
+    if (debugging) {
+        System.out.println("shiftToDrive - after");
+        System.out.println("Drive Solenoid set to " + armlevateShift.get());
+        System.out.println("Arm Solenoid set to  " + armapultShift.get());
+    }
+ }
+public void shiftToArmlevateOff() {
 //insert command here     
     if (debugging) {
         System.out.println("shiftToDrive - before");
-        System.out.println("Drive Solenoid set to " + driveShift.get());
-        System.out.println("Arm Solenoid set to  " + armShift.get());
+        System.out.println("Drive Solenoid set to " + armlevateShift.get());
+        System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
-    driveShift.set(true);
+    armlevateShift.set(false);
     if (debugging) {
         System.out.println("shiftToDrive - after");
-        System.out.println("Drive Solenoid set to " + driveShift.get());
-        System.out.println("Arm Solenoid set to  " + armShift.get());
+        System.out.println("Drive Solenoid set to " + armlevateShift.get());
+        System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
  }
-public void shiftToDriveOff ()
-{
-//insert command here     
-    if (debugging) {
-        System.out.println("shiftToDrive - before");
-        System.out.println("Drive Solenoid set to " + driveShift.get());
-        System.out.println("Arm Solenoid set to  " + armShift.get());
-    }
-    driveShift.set(false);
-    if (debugging) {
-        System.out.println("shiftToDrive - after");
-        System.out.println("Drive Solenoid set to " + driveShift.get());
-        System.out.println("Arm Solenoid set to  " + armShift.get());
-    }
- }
-public void shiftToClimbOn ()
-
-{
+public void shiftToArmapultOn() {
     if (debugging) {
         System.out.println("shiftToClimb - before");
-        System.out.println("Drive Solenoid set to " + driveShift.get());
-        System.out.println("Arm Solenoid set to  " + armShift.get());
+        System.out.println("Drive Solenoid set to " + armlevateShift.get());
+        System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
-    armShift.set(true);
+    armapultShift.set(true);
 
     if (debugging) {
         System.out.println("shiftToClimb - after");
-        System.out.println("Drive Solenoid set to " + driveShift.get());
-        System.out.println("Arm Solenoid set to  " + armShift.get());
+        System.out.println("Drive Solenoid set to " + armlevateShift.get());
+        System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
 }       
-public void shiftToClimbOff ()
-
-{
+public void shiftToArmapultOff() {
     if (debugging) {
         System.out.println("shiftToClimb - before");
-        System.out.println("Drive Solenoid set to " + driveShift.get());
-        System.out.println("Arm Solenoid set to  " + armShift.get());
+        System.out.println("Drive Solenoid set to " + armlevateShift.get());
+        System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
-    armShift.set(false);
+    armapultShift.set(false);
 
     if (debugging) {
         System.out.println("shiftToClimb - after");
-        System.out.println("Drive Solenoid set to " + driveShift.get());
-        System.out.println("Arm Solenoid set to  " + armShift.get());
+        System.out.println("Drive Solenoid set to " + armlevateShift.get());
+        System.out.println("Arm Solenoid set to  " + armapultShift.get());
     }
 }           
         
