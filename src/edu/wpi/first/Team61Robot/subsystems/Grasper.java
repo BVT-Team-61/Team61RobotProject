@@ -5,7 +5,7 @@
 package edu.wpi.first.Team61Robot.subsystems;
 
 import edu.wpi.first.Team61Robot.RobotMap;
-import edu.wpi.first.Team61Robot.commands.ShifterDoNothing;
+import edu.wpi.first.Team61Robot.commands.GrasperDoNothing;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -25,7 +25,7 @@ public class Grasper extends Subsystem {
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
-        setDefaultCommand(new ShifterDoNothing());
+        setDefaultCommand(new GrasperDoNothing());
     }
     public void doNothing() {
         ;

@@ -6,6 +6,7 @@ import edu.wpi.first.Team61Robot.subsystems.DriveTrain;
 import edu.wpi.first.Team61Robot.subsystems.Arm;
 import edu.wpi.first.Team61Robot.subsystems.Grasper;
 import edu.wpi.first.Team61Robot.subsystems.Shifter;
+import edu.wpi.first.Team61Robot.subsystems.Armapult;
 
 
 /**
@@ -23,6 +24,7 @@ public abstract class CommandBase extends Command {
     public static Shifter shifter = new Shifter ();
     public static Arm arm = new Arm();
     public static Grasper grasper = new Grasper();
+    public static Armapult armapult = new Armapult();
     
     public static double autoLeftSpeed[]        = { 1.0, 0.0, 0.0, 0.0, 0.0 };
     public static double autoRightSpeed[]       = { 1.0, 0.0, 0.0, 0.0, 0.0 };

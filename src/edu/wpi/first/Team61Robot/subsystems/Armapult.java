@@ -18,7 +18,7 @@ public class Armapult extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     private Solenoid release = new Solenoid (RobotMap.armapultInSolenoid);
-    private Solenoid back = new Solenoid (RobotMap.armapultOutSolenoid);
+    private Solenoid reset = new Solenoid (RobotMap.armapultOutSolenoid);
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
@@ -36,10 +36,10 @@ public class Armapult extends Subsystem {
         release.set(true);
     }
     
-    public void backOff(){
-        back.set(false);
+    public void resetOff(){
+        reset.set(false);
     }
-    public void backOn(){
-        back.set(true);
+    public void resetOn(){
+        reset.set(true);
     }
 }
