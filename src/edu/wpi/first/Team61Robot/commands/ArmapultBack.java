@@ -20,7 +20,7 @@ public class ArmapultBack extends CommandBase {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
         requires(arm);
-        setTimeout(0.02);
+        setTimeout(0.2);
     }
 
     // Called just before this Command runs the first time
