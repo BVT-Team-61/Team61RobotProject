@@ -7,7 +7,7 @@ package edu.wpi.first.Team61Robot.subsystems;
 
 import edu.wpi.first.Team61Robot.RobotMap;
 import edu.wpi.first.Team61Robot.commands.ArmlevateWithJoysticks;
-import edu.wpi.first.wpilibj.Solenoid;
+//import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -21,8 +21,8 @@ public class Arm extends Subsystem {
     // here. Call these from Commands.
 
     private SpeedController armMotor = new Victor(RobotMap.armMotor);
-    private Solenoid armapultIn = new Solenoid(RobotMap.armapultInSolenoid);
-    private Solenoid armapultOut = new Solenoid (RobotMap.armapultOutSolenoid);
+   // private Solenoid armapultIn = new Solenoid(RobotMap.armapultInSolenoid);
+   // private Solenoid armapultOut = new Solenoid (RobotMap.armapultOutSolenoid);
     
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
@@ -34,9 +34,9 @@ public class Arm extends Subsystem {
         armMotor.set(vel);
     }
     
-    public void setIn(boolean on) {
-        armapultIn.set(on);
-    }
+   // public void setIn(boolean on) {
+   //     armapultIn.set(on);
+   // }
     
     public void doNothing() {
     }

@@ -14,8 +14,8 @@ public class ArmapultReset extends CommandBase {
     public ArmapultReset() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-        requires(arm);
-        setTimeout(0.02);
+        requires(armapult);
+        setTimeout(0.2);
     }
 
     // Called just before this Command runs the first time
@@ -24,7 +24,7 @@ public class ArmapultReset extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        arm.setIn(true);
+        armapult.resetOn();
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -34,7 +34,7 @@ public class ArmapultReset extends CommandBase {
 
     // Called once after isFinished returns true
     protected void end() {
-        arm.setIn(false);
+        armapult.resetOff();
     }
 
     // Called when another command which requires one or more of the same
